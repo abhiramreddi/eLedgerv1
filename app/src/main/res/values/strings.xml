@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">eLedger</string>
+    <string name="home">Home</string>
+    <string name="ledger">Ledger</string>
+    <string name="visualize">Visualize</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="amount">Amount</string>
+    <string name="enter_amount_here">Enter amount here</string>
+    <string name="description">Description</string>
+
+
+    <string name="other">Other</string>
+    <string name="fuel">Fuel</string>
+    <string name="travel">Travel</string>
+    <string name="groceries">Groceries</string>
+    <string name="phone">Phone</string>
+    <string name="shopping">Shopping</string>
+    <string name="food">Food</string>
+    <string name="ex_food">ex:Food</string>
+    <string name="category">Category</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="type">Type</string>
+    <string name="health">Health</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="payments_history">Payments History</string>
+    <string name="see_more">see more..</string>
+    <string name="recent_history">Recent History</string>
+    <string name="todo">TODO</string>
+    <string name="_2709">2709</string>
+    <string name="current_balance">Current Balance:</string>
+    <string name="eledger">eLedger</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="register_here">Register Here</string>
+    <string name="date_amp_time"><![CDATA[Date & Time]]></string>
+    <string name="select_here">select here</string>
+    <string name="click_here">click here</string>
+    <string name="add_transaction">add transaction</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="_01_43am">01:43AM</string>
+    <string name="education">Education</string>
+    <string name="electricity">Electricity</string>
+    <string name="bills">Bills</string>
+    <string name="others">Others</string>
+    <string name="add_a_transaction">add a transaction</string>
+    <string name="add">Add</string>
+    <string name="select_category">Select Category</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="history">History</string>
+    <string name="housing">Housing</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string-array name="TYPE">
+        <item>CREDIT</item>
+        <item>DEBIT</item>
+    </string-array>
+</resources>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfd8dc"
+    tools:context=".fragments.Ledger">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvType"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/type"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/spinner1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:shadowColor="@color/white"
+        android:layout_marginStart="70dp"
+        android:textOff="@string/debit"
+        android:textOn="@string/credit"
+        android:layout_toEndOf="@+id/tvType"
+        android:gravity="center" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterAmount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvType"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/amount"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEnterAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/tvEnterAmount"
+        android:background="@android:color/transparent"
+        android:hint="@string/enter_amount"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:textColorHint="#757575"
+        tools:ignore="RtlSymmetry" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterDesc"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnterAmount"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/description"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEnterAmount"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/tvEnterAmount"
+        android:background="@android:color/transparent"
+        android:hint="@string/enter_description"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:textColorHint="#757575"
+        tools:ignore="RtlSymmetry" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCategory"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvEnterDesc"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/select_category"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etCategory"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etDescription"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/tvCategory"
+        android:hint="@string/ex_food"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry" />
+
+
+    <LinearLayout
+        android:id="@+id/CategoryList1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tvFood"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/food"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/food" />
+
+        <TextView
+            android:id="@+id/tvShopping"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/shopping"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/shopping" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/phone"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/phone"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/tvHealth"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/health"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/healthcare" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CategoryList2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CategoryList1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tvGroceries"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/groceries"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/groceries" />
+
+
+        <TextView
+            android:id="@+id/tvTravel"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/travel"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/travel"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/tvFuel"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/fuel"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/fuel" />
+
+        <TextView
+            android:id="@+id/tvEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/education"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/education" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/CategoryList3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CategoryList2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/tvElectricity"
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/electricity"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/electricity" />
+
+        <TextView
+            android:id="@+id/tvBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/bills"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/bills" />
+
+
+        <TextView
+            android:id="@+id/tvHousing"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/housing"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/house" />
+
+        <TextView
+            android:id="@+id/tvOther"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/others"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/others" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CategoryList3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/black"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>
