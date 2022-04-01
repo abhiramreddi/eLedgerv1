@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/my_drawer_layout"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#cfd8dc"
     tools:context=".fragments.Profile">
 
@@ -15,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="128dp"
             android:gravity="center"
-            android:text="Howudoing"
+            android:text="@string/howudoing"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -24,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu" />
+        app:menu="@menu/menu_float" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

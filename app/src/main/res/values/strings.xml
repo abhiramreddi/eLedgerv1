@@ -58,8 +58,16 @@
     <string name="housing">Housing</string>
     <string name="debit">Debit</string>
     <string name="credit">Credit</string>
+    <string name="howudoing">Howudoing</string>
     <string-array name="TYPE">
         <item>CREDIT</item>
         <item>DEBIT</item>
     </string-array>
+
+    <string name="app_name">Navigation Drawer</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
