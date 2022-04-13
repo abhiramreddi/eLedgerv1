@@ -21,6 +21,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_DESCRIPTION = "DESCRIPTION";
     public static final String COLUMN_CATEGORY = "CATEGORY";
     public static final String COLUMN_ID = "ID";
+    public static final String COLUMN_TYPE = "TYPE";
 
 
     public static int[] values;
@@ -130,7 +131,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                         break;
                 }
 
-                TransactionModel transactionModel = new TransactionModel(transactionID, transactionAmount, transactionDescription, transactionCategory);
+                TransactionModel transactionModel = new TransactionModel(transactionID, transactionAmount, transactionDescription, transactionCategory  );
                 returnList.add(transactionModel);
 
 

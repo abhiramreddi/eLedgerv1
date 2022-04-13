@@ -9,9 +9,9 @@ public class TransactionModel {
     private String Category;
 
 
-    public TransactionModel() {
 
-    }
+
+
 
     @NonNull
     @Override
@@ -58,6 +58,5 @@ public class TransactionModel {
         this.amount = amount;
         this.description = description;
         this.Category = category;
-
     }
 }
